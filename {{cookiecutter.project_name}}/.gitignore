@@ -1,0 +1,15 @@
+env
+.env
+.env-*
+dist/
+coverage/
+npm-debug.log
+node_modules/
+.DS_Store
+*.log
+Dockerfile
+build.{{cookiecutter.project_name}}/docker-base/package.json
+build.{{cookiecutter.project_name}}/docker-base/yarn.lock
+ci-coverage-output.txt
+.eslintcache
+.npmrc

@@ -1,2 +1,2 @@
 # cookiecutter-graphql-gateway
-A GraphQL API Gateway
+Project template for a simple, open source, graphql gateway.

@@ -1,0 +1,4 @@
+--ignore-file=match:/[.]eslintcache$
+--ignore-dir=dist
+--ignore-dir=node_modules
+--ignore-dir=coverage

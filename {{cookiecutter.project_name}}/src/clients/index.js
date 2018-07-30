@@ -1,5 +1,5 @@
 import { bind } from '@globality/nodule-config';
-import { createOpenAPIClient } from '@globality/nodule-graphql';
+import { createOpenAPIClient } from '@globality/nodule-openapi';
 
 import specs from './specs';
 

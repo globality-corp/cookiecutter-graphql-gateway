@@ -22,7 +22,7 @@ async function main() {
 
     terminal.newline();
     terminal.show('initializing', nodule.metadata.name);
-    await nodule.fromEnvironment().fromCredstash().load();
+    await nodule.fromEnvironment().fromSecretsManager().load();
 
     const app = createApp();
     const server = app.listen(port, ip);

@@ -12,6 +12,9 @@ import './routers';
 setDefaults('middleware.jwt', {
     realm: '{{cookiecutter.project_name}}',
 });
+setDefaults('routes.graphiql', {
+    endpointUrl: '/gql/graphql',
+});
 
 
 export default function createApp() {
@@ -26,7 +29,7 @@ export default function createApp() {
 
     // enable routers
     express.use('/api', apiRouter);
-    express.use('/content', contentRouter);
+    express.use('/gql', contentRouter);
     express.all('/*', notFound);
 
     return express;

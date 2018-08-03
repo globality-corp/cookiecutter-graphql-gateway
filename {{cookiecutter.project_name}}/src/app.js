@@ -24,12 +24,12 @@ export default function createApp() {
     } = getContainer('routes');
     const {
         apiRouter,
-        contentRouter,
+        gqlRouter,
     } = getContainer('routers');
 
     // enable routers
     express.use('/api', apiRouter);
-    express.use('/gql', contentRouter);
+    express.use('/gql', gqlRouter);
     express.all('/*', notFound);
 
     return express;

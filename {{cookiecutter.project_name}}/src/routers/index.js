@@ -11,7 +11,7 @@ bind('routers.apiRouter', () => {
     return router;
 });
 
-bind('routers.contentRouter', () => {
+bind('routers.gqlRouter', () => {
     const { graphql, graphiql, health } = getContainer('routes');
     const {
         jwt,

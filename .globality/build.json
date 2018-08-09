@@ -1,0 +1,7 @@
+{
+    "type": "node-service",
+    "params": {
+      "tier": "gateway",
+      "name": "{{cookiecutter.project_name}}"
+    }
+}

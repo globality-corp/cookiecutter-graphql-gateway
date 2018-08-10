@@ -47,7 +47,7 @@ The code structure for `{{cookiecutter.project_name}}` aims to have small, self-
 When adding to `{{cookiecutter.project_name}}`:
 
  1. Try to stick to the existing abstractions where possible. Consider writing a tech design before making significant changes.
- 2. Write APIs with an eye towards what the *frontend needs* vs what the *backend providers*; `{{cookiecutter.project_name}}` is a translation layer!
+ 2. Write APIs with an eye towards what the *frontend needs* vs what the *backend provides*; `{{cookiecutter.project_name}}` is a translation layer!
  3. Limit the number of top-level resources. Entry to the graph is tied our access control model. Most resources should be children.
  4. Resources should be named singularly and contain a list-valued property (called `items`) for pagination.
  5. Resolvers should use our `createResolver` function and adhere to its contract.

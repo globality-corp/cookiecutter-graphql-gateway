@@ -75,7 +75,7 @@ You will need to set a few environment variables for local development:
         cp .env.example .env
         # edit .env
 
- -  Source this configration:
+ -  Source this configuration:
 
         source .env
 

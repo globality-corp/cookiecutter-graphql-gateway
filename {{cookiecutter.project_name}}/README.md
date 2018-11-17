@@ -83,4 +83,4 @@ You will need to set a few environment variables for local development:
 
         yarn local
 
- -  Connect to http://localhost:{{cookiecutter.project_port}}/content/graphiql
+ -  Connect to http://localhost:{{cookiecutter.project_port}}/gql/graphiql

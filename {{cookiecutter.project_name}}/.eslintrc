@@ -9,6 +9,7 @@
           "exports": "always-multiline",
           "functions": "always-multiline"
         }],
+        "newline-per-chained-call": 0,
         "function-paren-newline": ["error", "consistent"],
         "object-curly-newline": ["error", {"consistent": true}],
         "indent": ["error", 4, { "SwitchCase": 1 }],

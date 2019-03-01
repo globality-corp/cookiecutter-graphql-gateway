@@ -1,12 +1,11 @@
-import { setDefaults, getContainer } from '@globality/nodule-config';
+import { getContainer, setDefaults } from '@globality/nodule-config';
 import '@globality/nodule-graphql';
-
 // resolve graph dependencies
 import './clients';
 import './resolvers';
 import './resources';
-import './schema';
 import './routers';
+import './schema';
 
 
 setDefaults('middleware.jwt', {
@@ -24,11 +23,13 @@ export default function createApp() {
     } = getContainer('routes');
     const {
         apiRouter,
+        configRouter,
         gqlRouter,
     } = getContainer('routers');
 
     // enable routers
     express.use('/api', apiRouter);
+    express.use('/api', configRouter);
     express.use('/gql', gqlRouter);
     express.all('/*', notFound);
 

@@ -1,7 +1,8 @@
 {
     "type": "node-service",
+    "version": "{{ cookiecutter.project_version }}",
     "params": {
-      "tier": "gateway",
+      "tier": "{{ cookiecutter.tier }}",
       "name": "{{ cookiecutter.project_name }}"
     }
 }

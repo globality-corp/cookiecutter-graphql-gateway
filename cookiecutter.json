@@ -4,5 +4,6 @@
     "project_name": "project",
     "project_version": "0.1.0",
     "project_description": "Project Description",
-    "project_port": "3000"
+    "project_port": "3000",
+    "tier": ["gateway", "service"]
 }

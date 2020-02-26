@@ -1,0 +1,12 @@
+env
+.env
+.env-*
+dist/
+coverage/
+npm-debug.log
+node_modules/
+.DS_Store
+*.log
+ci-coverage-output.txt
+.eslintcache
+.npmrc
